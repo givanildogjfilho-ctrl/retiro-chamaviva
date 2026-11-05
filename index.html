@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retiro de Jovens Chama Viva · 07 e 08 de novembro</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Retiro de Jovens Chama Viva · 07 e 08 de novembro">
+<meta property="og:description" content="Dois dias pra desligar do barulho e ligar em Deus. Chácara Chalana, Barreiras-BA. Programação, o que levar e mais.">
+<meta property="og:image" content="https://retiro-chamaviva.netlify.app/img/capa.jpg">
+<meta property="og:image:width" content="1080"><meta property="og:image:height" content="1350">
+<meta property="og:url" content="https://retiro-chamaviva.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12100E">
+<link rel="icon" href="img/chamaviva.png">
+<style>@font-face{font-family:"Bebas Neue";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/bebas-neue-latin-400-normal.woff2) format("woff2")}@font-face{font-family:"Bebas Neue";font-style:normal;font-weight:400;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1EFF;src:url(fonts/bebas-neue-latin-ext-400-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/inter-latin-700-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/inter-latin-800-normal.woff2) format("woff2")}</style>
+<style>
+  :root{
+    --fogo-1:#FFC224; --fogo-2:#F5801C; --fogo-3:#E3450C; --brasa:#9E2A06;
+    --preto:#12100E; --carvao:#1F1A16; --fumaca:#2B2521;
+    --areia:#F7F1E8; --papel:#FFFFFF;
+    --ink:#1C1816; --ink-2:#5E5750; --ink-3:#9A928A; --linha:#E9E0D3;
+    --r:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--areia);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:16px}
+  img{display:block;max-width:100%}
+  .wrap{width:min(720px,100% - 40px);margin-inline:auto}
+  .display{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:.92}
+  .label{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;font-weight:700}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;background:var(--preto);color:#fff;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden;isolation:isolate}
+  .hero .bg{position:absolute;inset:0;z-index:-2;background:url(img/hero-m.jpg) center/cover no-repeat}
+  @media(min-width:700px){.hero .bg{background-image:url(img/hero.jpg);background-position:center 60%}}
+  .hero .shade{position:absolute;inset:0;z-index:-1;background:
+      linear-gradient(180deg,rgba(18,16,14,.72) 0%,rgba(18,16,14,.45) 30%,rgba(18,16,14,.7) 55%,rgba(18,16,14,.97) 100%)}
+  .hero .ember{position:absolute;z-index:-1;left:50%;bottom:-30%;width:140%;height:70%;transform:translateX(-50%);
+      background:radial-gradient(ellipse at 50% 100%,rgba(245,128,28,.65) 0%,rgba(227,69,12,.3) 35%,transparent 70%);filter:blur(10px)}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:22px 20px;gap:12px}
+  .topbar img{height:clamp(64px,13vw,92px);width:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.55))}
+  .topbar img.ig{height:clamp(84px,17vw,124px)}
+  .hero-body{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:10px 20px 20px}
+  .hero-body .label{color:var(--fogo-1);display:inline-flex;align-items:center;gap:12px}
+  .hero-body .label::before,.hero-body .label::after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+  .hero h1{font-size:clamp(5rem,22vw,8.6rem);margin:14px 0 20px;color:#FFD54A;
+      text-shadow:0 2px 0 rgba(0,0,0,.25),0 10px 30px rgba(0,0,0,.7),0 0 40px rgba(245,128,28,.35)}
+  .dates{display:inline-flex;align-items:center;gap:0;border:1px solid rgba(255,255,255,.22);border-radius:16px;overflow:hidden;backdrop-filter:blur(8px);background:rgba(18,16,14,.45)}
+  .dates .dd{padding:10px 20px;display:flex;flex-direction:column;align-items:center;line-height:1}
+  .dates .dd b{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:2.8rem;color:#fff}
+  .dates .dd span{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--fogo-1);font-weight:700;margin-top:4px}
+  .dates .sep{width:1px;align-self:stretch;background:rgba(255,255,255,.22)}
+  .hero-foot{padding:0 20px 26px;text-align:center}
+  .hero-foot .place{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#F2EBE1;font-size:.95rem}
+  .hero-foot .place svg{width:16px;height:16px}
+  .hero-foot .scroll{display:block;margin:14px auto 0;width:22px;height:34px;border:2px solid rgba(255,255,255,.4);border-radius:12px;position:relative}
+  .hero-foot .scroll::after{content:"";position:absolute;left:50%;top:6px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--fogo-1);animation:dot 1.6s infinite}
+  @keyframes dot{0%{transform:translateY(0);opacity:1}100%{transform:translateY(12px);opacity:0}}
+
+  /* countdown */
+  .count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px auto 0;max-width:360px}
+  .count div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:8px 4px;text-align:center;backdrop-filter:blur(6px)}
+  .count b{display:block;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:2rem;line-height:1;color:#fff}
+  .count span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--fogo-1);font-weight:700}
+  .count.done{grid-template-columns:1fr}
+  .count.done b{font-size:1.6rem;color:var(--fogo-1)}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .rv.on{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+  /* tabs */
+  .tabs{display:grid;grid-template-columns:1fr 1fr;background:#EFE6D8;border-radius:14px;padding:4px;margin-bottom:14px}
+  .tabs button{border:0;background:transparent;font:700 .95rem 'Inter',sans-serif;color:var(--ink-2);padding:12px;border-radius:11px;cursor:pointer;transition:.2s}
+  .tabs button.on{background:var(--ink);color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+  .dias .card{display:none}.dias .card.on{display:block}
+  .ev.now{background:linear-gradient(90deg,#FFF1DC,transparent);margin:0 -10px;padding-left:10px;padding-right:10px;border-radius:10px}
+  .ev.now .tx::after{content:"agora";font:800 .6rem 'Inter';letter-spacing:.15em;text-transform:uppercase;color:#fff;background:var(--fogo-3);padding:3px 7px;border-radius:999px;margin-left:8px;vertical-align:middle}
+  .ev.link .tx{cursor:pointer;text-decoration:underline;text-decoration-color:var(--fogo-2);text-underline-offset:4px}
+  .ev.link .tx::after{content:" →";text-decoration:none}
+
+  .tap-sm{font:800 .6rem 'Inter';letter-spacing:.14em;text-transform:uppercase;color:#17120F;background:var(--fogo-1);padding:4px 8px;border-radius:999px;font-style:normal;margin-left:6px;vertical-align:middle;text-decoration:none;display:inline-block}
+  .ev.link .tx::after{content:""}
+  /* checklist */
+  .lista li{cursor:pointer;user-select:none;transition:.2s}
+  .lista li.ok{opacity:.45}
+  .lista li.ok div{text-decoration:line-through}
+  .lista li.ok i{background:var(--fogo-2);position:relative}
+  .lista li.ok i::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+  .lista-foot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:.78rem;color:var(--ink-3)}
+  .lista-foot button{border:0;background:none;color:var(--fogo-3);font:700 .78rem 'Inter';cursor:pointer}
+
+  /* times */
+  .times{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  .time{border-radius:14px;padding:16px 14px;color:#fff;text-align:center;font-family:'Bebas Neue',Impact,sans-serif;font-size:1.7rem;letter-spacing:.06em;line-height:1}
+  .time small{display:block;font:600 .68rem 'Inter';letter-spacing:.18em;text-transform:uppercase;opacity:.85;margin-bottom:6px}
+  .time.azul{background:linear-gradient(145deg,#1E5EFF,#0B2F9E);box-shadow:0 8px 20px rgba(30,94,255,.3)}
+  .time.verde{background:linear-gradient(145deg,#19B45A,#0B6B36);box-shadow:0 8px 20px rgba(25,180,90,.3)}
+
+  /* gincana overlay */
+  .gk{position:fixed;inset:0;z-index:50;background:#07060A;color:#fff;overflow:auto;display:none;opacity:0;transition:opacity .35s}
+  .gk.open{display:block}.gk.show{opacity:1}
+  .gk .in{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px 48px;position:relative;z-index:1}
+  .gk .close{position:fixed;top:16px;right:16px;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.4);color:#fff;font-size:1.3rem;cursor:pointer;backdrop-filter:blur(6px)}
+  .gk .fx{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+  .gk .fx i{position:absolute;bottom:-20px;width:6px;height:6px;border-radius:50%;background:var(--fogo-1);opacity:0;animation:rise linear infinite;filter:blur(.5px)}
+  @keyframes rise{0%{transform:translateY(0) scale(1);opacity:0}10%{opacity:.9}100%{transform:translateY(-110vh) scale(.2);opacity:0}}
+  .gk .glow{position:absolute;left:50%;bottom:-20%;width:160%;height:80%;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 100%,rgba(227,69,12,.75),rgba(245,128,28,.25) 40%,transparent 70%);filter:blur(20px)}
+  .flame{width:120px;height:150px;position:relative;margin-bottom:10px}
+  .flame span{position:absolute;left:50%;bottom:0;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;transform-origin:50% 100%;animation:flk 1.1s ease-in-out infinite alternate}
+  .flame .f1{width:90px;height:140px;margin-left:-45px;background:radial-gradient(ellipse at 50% 90%,#FFE26A 0%,#F5801C 45%,#E3450C 75%,transparent 100%);filter:blur(4px);opacity:.9}
+  .flame .f2{width:56px;height:100px;margin-left:-28px;background:radial-gradient(ellipse at 50% 90%,#fff 0%,#FFE26A 40%,#F5801C 80%,transparent 100%);filter:blur(2px);animation-duration:.8s;animation-delay:.2s}
+  .flame .f3{width:26px;height:50px;margin-left:-13px;background:radial-gradient(ellipse at 50% 90%,#fff,#FFF3B0 60%,transparent);filter:blur(1px);animation-duration:.6s}
+  @keyframes flk{0%{transform:scaleX(1) scaleY(1) rotate(-2deg)}100%{transform:scaleX(.92) scaleY(1.08) rotate(2deg)}}
+  .gk .kick{font-size:.72rem;letter-spacing:.35em;text-transform:uppercase;color:var(--fogo-1);font-weight:700}
+  .gk h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(4rem,20vw,7.5rem);line-height:.9;margin:10px 0 6px;color:#FFD54A;text-shadow:0 10px 30px rgba(227,69,12,.6),0 0 40px rgba(245,128,28,.4)}
+  .gk .breve{font-family:'Bebas Neue',Impact,sans-serif;font-size:1.6rem;letter-spacing:.35em;color:#fff;border:1px solid rgba(255,194,36,.5);padding:8px 18px 6px 22px;border-radius:999px;margin:10px 0 22px;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,194,36,.4)}50%{box-shadow:0 0 0 12px rgba(255,194,36,0)}}
+  .gk p{max-width:34ch;color:#D9CFC2;font-size:1.05rem}
+  .gk p strong{color:#fff}
+  .gk .count{margin-top:26px}
+  .gk .times{max-width:360px;width:100%;margin-top:26px}
+  .gk .dica{margin-top:14px;font-size:.85rem;color:#A79D92;max-width:36ch}
+  .gk .voltar{margin-top:32px;background:var(--fogo-3);color:#fff;border:0;border-radius:12px;padding:14px 26px;font:800 .95rem 'Inter';cursor:pointer}
+  body.lock{overflow:hidden}
+
+  /* ===== CONVITE ===== */
+  .convite{background:var(--preto);color:#fff;padding:52px 0 60px;position:relative}
+  .convite::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--fogo-2),transparent)}
+  .convite .label{color:var(--fogo-1)}
+  .convite h2{font-size:clamp(2.4rem,9vw,3.6rem);margin:12px 0 18px;color:#fff}
+  .convite p{color:#CFC5B8;font-size:1.05rem;max-width:56ch}
+  .convite p strong{color:#fff}
+  .verso{margin-top:34px;padding:26px 24px 22px;border-left:3px solid var(--fogo-1);background:linear-gradient(90deg,rgba(255,194,36,.08),transparent)}
+  .verso q{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(1.7rem,6.5vw,2.4rem);line-height:1.05;letter-spacing:.02em;color:#FFE6A3;display:block;quotes:"“" "”"}
+  .verso cite{display:block;margin-top:12px;font-style:normal;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--fogo-1);font-weight:700}
+
+  /* ===== DESTAQUES ===== */
+  .destaques{background:var(--carvao);padding:34px 0 44px;color:#fff}
+  .chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
+  .chip{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 14px;display:flex;flex-direction:column;gap:10px}
+  .chip svg{width:26px;height:26px;stroke:var(--fogo-1);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .chip b{font-weight:700;font-size:.95rem;line-height:1.25}
+  .chip span{font-size:.8rem;color:#A79D92}
+
+  .gk-chip{cursor:pointer;background:linear-gradient(145deg,rgba(245,128,28,.22),rgba(227,69,12,.1));border:1px solid rgba(255,194,36,.6);position:relative;animation:chipglow 2.2s ease-in-out infinite}
+  @keyframes chipglow{0%,100%{box-shadow:0 0 0 0 rgba(255,194,36,.0)}50%{box-shadow:0 0 24px 2px rgba(255,194,36,.35)}}
+  .gk-chip:hover{transform:translateY(-2px)}
+  .gk-chip .tap{display:inline-flex;align-items:center;gap:6px;margin-top:4px;font:800 .66rem 'Inter';letter-spacing:.16em;text-transform:uppercase;color:#17120F;background:var(--fogo-1);padding:6px 10px;border-radius:999px;font-style:normal;align-self:flex-start}
+  .gk-chip .tap svg{width:14px;height:14px;stroke:#17120F;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;animation:tap 1.4s ease-in-out infinite}
+  @keyframes tap{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+
+  /* ===== SECTIONS ===== */
+  section.bloco{padding:52px 0 0}
+  .sec-h{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;margin-bottom:18px}
+  .sec-h .num{font-family:'Bebas Neue',Impact,sans-serif;font-size:2.4rem;line-height:1;color:var(--fogo-2);padding-right:14px;border-right:2px solid var(--linha)}
+  .sec-h .label{color:var(--ink-3)}
+  .sec-h h2{font-size:2.3rem;color:var(--ink)}
+  .card{background:var(--papel);border-radius:var(--r);padding:22px;box-shadow:0 1px 0 rgba(0,0,0,.02),0 14px 40px rgba(60,40,10,.07);border:1px solid var(--linha)}
+
+  /* saída */
+  .saida{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+  .saida .big{font-family:'Bebas Neue',Impact,sans-serif;font-size:4rem;line-height:.9;color:var(--fogo-3)}
+  .saida .big small{display:block;font-family:'Inter';font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin-top:8px}
+  .saida p{font-weight:700;font-size:1.1rem}
+  .saida p span{display:block;font-weight:400;color:var(--ink-2);font-size:.92rem;margin-top:4px}
+
+  /* avisos */
+  .avisos{display:grid;gap:12px}
+  .aviso{background:var(--carvao);color:#EFE7DC;border-radius:var(--r);padding:20px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;position:relative;overflow:hidden}
+  .aviso::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--fogo-1),var(--fogo-3))}
+  .aviso .i{width:44px;height:44px;border-radius:12px;background:rgba(255,194,36,.12);display:grid;place-items:center}
+  .aviso .i svg{width:22px;height:22px;stroke:var(--fogo-1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .aviso b{display:block;font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;color:var(--fogo-1);margin-bottom:4px}
+  .aviso strong{color:#fff}
+
+  /* programação */
+  .dias{display:grid;gap:14px}
+  .dia-h{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--linha);margin-bottom:8px}
+  .dia-h .n{font-family:'Bebas Neue',Impact,sans-serif;font-size:3rem;line-height:1;color:var(--fogo-2)}
+  .dia-h .t b{display:block;font-size:1.1rem}
+  .dia-h .t span{font-size:.85rem;color:var(--ink-2)}
+  .ev{display:grid;grid-template-columns:84px 1fr;gap:14px;padding:11px 0;border-bottom:1px dashed var(--linha);align-items:start}
+  .ev:last-child{border-bottom:0}
+  .ev .hr{font-family:'Bebas Neue',Impact,sans-serif;font-size:1.5rem;line-height:1.1;color:var(--ink);letter-spacing:.03em}
+  .ev .hr small{display:block;font-family:'Inter';font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-top:2px}
+  .ev .tx{font-weight:600;padding-top:3px}
+  .ev.livre .tx{color:var(--ink-3);font-weight:500}
+  .ev.hi .tx{color:var(--fogo-3);font-weight:800}
+  .ev.hi .tx::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--fogo-2);margin-right:8px;vertical-align:middle;box-shadow:0 0 0 3px rgba(245,128,28,.18)}
+
+  /* preletor */
+  .preletor{background:#000;color:#fff;border-radius:var(--r);margin-top:14px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 46%}
+  .preletor .pt{padding:24px 0 24px 22px;position:relative;z-index:1}
+  .preletor .pf{position:relative;min-height:300px}
+  .preletor .pf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+  .preletor .pf::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 0%,transparent 35%)}
+  @media(max-width:520px){.preletor{grid-template-columns:1fr}.preletor .pt{padding:22px 22px 0}.preletor .pf{min-height:340px}.preletor .pf::after{background:linear-gradient(180deg,#000 0%,transparent 35%)}}
+  .preletor::after{content:"";position:absolute;left:-80px;bottom:-120px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(245,128,28,.35),transparent 70%);pointer-events:none}
+  .preletor .label{color:var(--fogo-1)}
+  .preletor h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:2rem;letter-spacing:.03em;line-height:1;margin:8px 0 14px}
+  .pessoas{display:grid;gap:12px}
+  .pessoa{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center}
+  .pessoa .av{width:46px;height:46px;border-radius:50%;background:rgba(255,194,36,.14);display:grid;place-items:center}
+  .pessoa .av svg{width:22px;height:22px;stroke:var(--fogo-1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .pessoa b{display:block;font-size:1.05rem}
+  .pessoa span{font-size:.82rem;color:#CBBFB2}
+
+  /* local */
+  .endereco{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;margin-bottom:16px}
+  .endereco .i{width:44px;height:44px;border-radius:12px;background:#FFF1DD;display:grid;place-items:center}
+  .endereco .i svg{width:22px;height:22px;stroke:var(--fogo-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .endereco b{font-size:1.1rem;display:block}
+  .endereco span{display:block;color:var(--ink-2);font-size:.92rem}
+  .fotos{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:118px;gap:8px}
+  .fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+  .fotos .a{grid-column:span 4;grid-row:span 2}
+  .fotos .b,.fotos .c{grid-column:span 2}
+  .fotos .d,.fotos .e{grid-column:span 3}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:var(--ink);color:#fff;font-weight:700;text-decoration:none;padding:15px 18px;border-radius:14px;font-size:.95rem;transition:background .2s}
+  .btn:hover{background:var(--fogo-3)}
+  .btn svg{width:20px;height:20px;stroke:var(--fogo-1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* levar */
+  .levar{display:grid;gap:14px}
+  .levar h3{font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--fogo-3);font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+  .levar h3::after{content:"";flex:1;height:1px;background:var(--linha)}
+  .lista{list-style:none}
+  .lista li{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--linha);font-weight:600}
+  .lista li:last-child{border-bottom:0}
+  .lista li i{width:20px;height:20px;border-radius:6px;border:2px solid var(--fogo-2);display:block;margin-top:3px}
+  .lista li span{display:block;font-weight:400;color:var(--ink-2);font-size:.88rem}
+  .fun{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+  .fun div{background:#FFF7E9;border:1px solid #F3E3C6;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px;font-weight:600;font-size:.9rem}
+  .fun svg{width:24px;height:24px;stroke:var(--fogo-3);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .fun small{font-weight:400;color:var(--ink-2);font-size:.8rem}
+
+  /* regras */
+  .regras{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .regras li{background:var(--papel);border:1px solid var(--linha);border-radius:14px;padding:14px 14px 14px 46px;position:relative;font-size:.9rem;font-weight:500;line-height:1.4}
+  .regras li svg{position:absolute;left:14px;top:14px;width:20px;height:20px;stroke:var(--fogo-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  @media(max-width:480px){.regras{grid-template-columns:1fr}}
+
+  /* footer */
+  footer{margin-top:60px;background:var(--preto);color:#9A8F84;text-align:center;padding:44px 20px 48px;position:relative;overflow:hidden}
+  footer::before{content:"";position:absolute;left:50%;top:-160px;width:600px;height:300px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(245,128,28,.4),transparent 70%);filter:blur(6px)}
+  footer .logos{display:flex;justify-content:center;align-items:center;gap:28px;position:relative;margin-bottom:18px}
+  footer .logos img{height:84px}
+  footer .logos img.ig{height:110px}
+  footer .f1{font-family:'Bebas Neue',Impact,sans-serif;font-size:1.7rem;letter-spacing:.12em;color:#fff;position:relative}
+  footer .f2{font-size:.82rem;position:relative;margin-top:4px}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bg"></div><div class="shade"></div><div class="ember"></div>
+  <div class="topbar">
+    <img src="img/chamaviva.png" alt="Chama Viva">
+    <img class="ig" src="img/igreja.png" alt="1ª Igreja Evangélica Assembleia de Deus em Barreiras-BA">
+  </div>
+  <div class="hero-body">
+    <span class="label">Chama Viva</span>
+    <h1 class="display">Retiro<br>de Jovens</h1>
+    <div class="dates">
+      <div class="dd"><b>07</b><span>Sábado</span></div>
+      <div class="sep"></div>
+      <div class="dd"><b>08</b><span>Domingo</span></div>
+      <div class="sep"></div>
+      <div class="dd"><b>NOV</b><span>2026</span></div>
+    </div>
+    <div class="count" id="cd-hero"></div>
+  </div>
+  <div class="hero-foot">
+    <div class="place">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#FFC224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      Chácara Chalana · Rio de Ondas · Barreiras-BA
+    </div>
+    <span class="scroll"></span>
+  </div>
+</header>
+
+<!-- CONVITE -->
+<section class="convite rv">
+  <div class="wrap">
+    <span class="label">O convite</span>
+    <h2 class="display">Dois dias pra desligar<br>do barulho e ligar em Deus.</h2>
+    <p>Rio, piscina, gincana, amigos de verdade e um altar que não apaga. É tempo de sair da rotina, abrir a Palavra, orar junto e voltar pra casa com o coração em chamas. <strong>Separa o fim de semana. Vem com a gente.</strong></p>
+    <div class="verso">
+      <q>O fogo arderá continuamente sobre o altar; não se apagará.</q>
+      <cite>Levítico 6:13</cite>
+    </div>
+  </div>
+</section>
+
+<!-- DESTAQUES -->
+<section class="destaques rv">
+  <div class="wrap">
+    <span class="label" style="color:var(--fogo-1)">O que vai ter</span>
+    <div class="chips">
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M12 3c1 3-2 4-2 7a4 4 0 0 0 8 0c0-2-1-3-1-3s0 2-2 2c0-2-1-4-3-6z"/><path d="M7 13c-2 2-2 6 1 8h8c3-2 3-6 1-8"/></svg><b>Círculo de Oração</b><span>Sábado à noite</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><b>EBD</b><span>Estudo da Palavra</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><b>Manhã com Deus</b><span>Domingo cedo</span></div>
+      <div class="chip gk-chip" data-gk role="button" tabindex="0"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><b>Gincana</b><span>Domingo à tarde · Azul × Verde</span><em class="tap"><svg viewBox="0 0 24 24"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v6"/><path d="M12 10a1.5 1.5 0 0 1 3 0v2"/><path d="M15 11a1.5 1.5 0 0 1 3 0v2"/><path d="M18 12.5a1.5 1.5 0 0 1 3 0V17a5 5 0 0 1-5 5h-3.5a5 5 0 0 1-4.2-2.3L5.5 15a1.6 1.6 0 0 1 2.6-1.8L9 14.5"/></svg>Toque pra ver</em></div>
+      <div class="chip"><svg viewBox="0 0 24 24"><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M12 3v5"/></svg><b>Rio e piscina</b><span>Horários livres</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4 4 0 0 1 7-2.5"/></svg><b>Comunhão</b><span>Refeições juntos</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- SAÍDA -->
+  <section class="bloco rv">
+    <div class="sec-h">
+      <span class="num">01</span>
+      <div><span class="label">Sábado · 07/11</span><h2 class="display">Saída</h2></div>
+    </div>
+    <div class="card saida">
+      <div class="big">07:30<small>pontual</small></div>
+      <p>Em frente à igreja<span>Chegue antes do horário.</span></p>
+    </div>
+  </section>
+
+  <!-- AVISOS -->
+  <section class="bloco rv">
+    <div class="sec-h">
+      <span class="num">02</span>
+      <div><span class="label">Leia com atenção</span><h2 class="display">Avisos importantes</h2></div>
+    </div>
+    <div class="avisos">
+      <div class="aviso">
+        <div class="i"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div><b>Apoio logístico</b>Quem precisar de apoio logístico, entre em contato com a <strong>Daíse no privado</strong>.</div>
+      </div>
+      <div class="aviso">
+        <div class="i"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+        <div><b>Mensalidades</b>Quem ainda não pagou terá a opção de passar no <strong>cartão de crédito</strong>.</div>
+      </div>
+      <div class="aviso">
+        <div class="i"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg></div>
+        <div><b>Gincana · Times</b>A gincana será <strong>Time Azul</strong> contra <strong>Time Verde</strong>. Leve roupa das <strong>duas cores</strong> — o seu time só sai lá.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAÇÃO -->
+  <section class="bloco rv">
+    <div class="sec-h">
+      <span class="num">03</span>
+      <div><span class="label">Dois dias</span><h2 class="display">Programação</h2></div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="on" data-dia="sab">Sábado 07</button>
+      <button data-dia="dom">Domingo 08</button>
+    </div>
+    <div class="dias">
+      <div class="card on" id="dia-sab">
+        <div class="dia-h"><span class="n">07</span><div class="t"><b>Sábado</b><span>Dia livre na chácara · noite com a Palavra</span></div></div>
+        <div class="ev hi" data-t="2026-11-07T07:30|2026-11-07T08:30"><div class="hr">07:30</div><div class="tx">Saída em frente à igreja</div></div>
+        <div class="ev livre" data-t="2026-11-07T08:30|2026-11-07T12:30"><div class="hr">Manhã</div><div class="tx">Horário livre</div></div>
+        <div class="ev" data-t="2026-11-07T12:30|2026-11-07T13:30"><div class="hr">12:30</div><div class="tx">Almoço</div></div>
+        <div class="ev livre" data-t="2026-11-07T13:30|2026-11-07T18:30"><div class="hr">Tarde</div><div class="tx">Horário livre</div></div>
+        <div class="ev" data-t="2026-11-07T18:30|2026-11-07T19:30"><div class="hr">18:30</div><div class="tx">Jantar</div></div>
+        <div class="ev hi" data-t="2026-11-07T19:30|2026-11-07T21:00"><div class="hr">19:30<small>às 21:00</small></div><div class="tx">Círculo de Oração e EBD</div></div>
+        <div class="ev livre" data-t="2026-11-07T21:00|2026-11-08T08:00"><div class="hr">21:00</div><div class="tx">Horário livre</div></div>
+      </div>
+      <div class="card" id="dia-dom">
+        <div class="dia-h"><span class="n">08</span><div class="t"><b>Domingo</b><span>Manhã com Deus · gincana · volta</span></div></div>
+        <div class="ev" data-t="2026-11-08T08:00|2026-11-08T09:00"><div class="hr">08:00</div><div class="tx">Café da manhã</div></div>
+        <div class="ev hi" data-t="2026-11-08T09:00|2026-11-08T11:30"><div class="hr">09:00<small>às 11:30</small></div><div class="tx">Manhã com Deus</div></div>
+        <div class="ev livre" data-t="2026-11-08T11:30|2026-11-08T12:30"><div class="hr">11:30<small>às 12:30</small></div><div class="tx">Horário livre</div></div>
+        <div class="ev" data-t="2026-11-08T12:30|2026-11-08T14:00"><div class="hr">12:30<small>às 14:00</small></div><div class="tx">Almoço</div></div>
+        <div class="ev hi link" data-t="2026-11-08T14:00|2026-11-08T16:00"><div class="hr">14:00<small>às 16:00</small></div><div class="tx" data-gk>Gincana <em class="tap-sm">toque pra ver</em></div></div>
+        <div class="ev" data-t="2026-11-08T17:00|2026-11-08T18:00"><div class="hr">17:00</div><div class="tx">Saída de volta pra Barreiras</div></div>
+      </div>
+    </div>
+    <div class="preletor">
+      <div class="pt">
+      <span class="label">Manhã com Deus · domingo</span>
+      <h3>Preletor e ministração</h3>
+      <div class="pessoas">
+        <div class="pessoa">
+          <div class="av"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg></div>
+          <div><b>Pr. Carlos Luz</b><span>Pastor Presidente do Campo de Barreiras · preletor</span></div>
+        </div>
+        <div class="pessoa">
+          <div class="av"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+          <div><b>Irª. Magdaly Duarte</b><span>Cantora · ministração de louvor</span></div>
+        </div>
+      </div>
+      </div>
+      <div class="pf"><img src="img/preletores.jpg" alt="Pr. Carlos Luz e Irª. Magdaly Duarte"></div>
+    </div>
+  </section>
+
+  <!-- LOCAL -->
+  <section class="bloco rv">
+    <div class="sec-h">
+      <span class="num">04</span>
+      <div><span class="label">Onde vai ser</span><h2 class="display">O local</h2></div>
+    </div>
+    <div class="card">
+      <div class="endereco">
+        <div class="i"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <div>
+          <b>Chácara Chalana</b>
+          <span>Povoado de Sucuriuzinho · Rio de Ondas · Vale da Boa Esperança</span>
+          <span>Cerca de 28 km do centro de Barreiras, sendo 3 km de estrada de chão</span>
+        </div>
+      </div>
+      <div class="fotos">
+        <img class="a" src="img/piscina.jpg" alt="Piscina">
+        <img class="b" src="img/gramado.jpg" alt="Gramado à beira do rio">
+        <img class="c" src="img/volei.jpg" alt="Quadra de vôlei">
+        <img class="d" src="img/quiosque.jpg" alt="Quiosque com mesas">
+        <img class="e" src="img/area.jpg" alt="Área da chácara">
+      </div>
+      <a class="btn" href="https://photos.google.com/share/AF1QipNsogtmNT1AY_g5vCd8eZBW8p3ogmfWUbfDsD4dzjkIu_5mSDU3unwT1pJuGwAPCg?key=ZWF0UHg5WTB4Z1hwbU53cVpzT0xBN291WDBnZUNn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
+        Ver mais fotos da chácara
+      </a>
+    </div>
+  </section>
+
+  <!-- LEVAR -->
+  <section class="bloco rv">
+    <div class="sec-h">
+      <span class="num">05</span>
+      <div><span class="label">Não esqueça</span><h2 class="display">O que levar</h2></div>
+    </div>
+    <div class="levar">
+      <div class="card">
+        <h3>Essencial</h3>
+        <ul class="lista">
+          <li><i></i><div>Bíblia / revista da EBD</div></li>
+          <li><i></i><div>Água<span>garrafa térmica</span></div></li>
+          <li><i></i><div>Colchonete</div></li>
+          <li><i></i><div>Prato e talheres</div></li>
+          <li><i></i><div>Travesseiro, lençol de se cobrir e lençol de vestir a cama</div></li>
+          <li><i></i><div>Toalha de banho</div></li>
+          <li><i></i><div>Cobertor</div></li>
+          <li><i></i><div>Itens de uso pessoal</div></li>
+          <li><i></i><div>Lanches avulsos</div></li>
+          <li><i></i><div>Roupa de banho composta<span>blusa na parte de cima e short composto</span></div></li>
+          <li><i></i><div>Roupa azul e roupa verde<span>pra gincana — o time só sai lá</span></div></li>
+        </ul>
+        <div class="lista-foot"><span id="lista-st">Toque pra marcar o que já separou</span><button id="lista-reset">Limpar</button></div>
+      </div>
+      <div class="card">
+        <h3>Pra diversão</h3>
+        <div class="times" style="margin:0 0 14px"><div class="time azul"><small>Time</small>Azul</div><div class="time verde"><small>Time</small>Verde</div></div>
+        <div class="fun">
+          <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3c-3 3-3 15 0 18M12 3c3 3 3 15 0 18M3 12h18"/></svg>Bola de vôlei<small>ou de futebol</small></div>
+          <div><svg viewBox="0 0 24 24"><rect x="4" y="3" width="11" height="15" rx="2" transform="rotate(-8 9.5 10.5)"/><rect x="9" y="6" width="11" height="15" rx="2" transform="rotate(8 14.5 13.5)"/></svg>Uno<small>e outros baralhos</small></div>
+          <div><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M12 7v10"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="12" r="1"/></svg>Dominó</div>
+          <div><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M12 8v8"/></svg>Joguinhos de mesa<small>o que tiver em casa</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGRAS -->
+  <section class="bloco rv">
+    <div class="sec-h">
+      <span class="num">06</span>
+      <div><span class="label">Cuide do lugar</span><h2 class="display">Regras da chácara</h2></div>
+    </div>
+    <ul class="regras">
+      <li><svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>Somente som ambiente. Nada de som alto.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3v7M8 7l4 3 4-3"/><path d="M4 14c2-2 4-2 6 0s4 2 6 0 3 0 4 1"/><path d="M4 19c2-2 4-2 6 0s4 2 6 0 3 0 4 1"/></svg>Lave os pés na ducha antes de entrar na piscina.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M4 12l8-8 8 8M6 12v8h12v-8"/></svg>Use sandália ao sair da piscina. Piso molhado escorrega.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 14a3 3 0 0 1-6 0z"/><path d="M4 4l16 16"/></svg>Nada de copo de vidro na piscina.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18V9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v9"/><path d="M5 12h14"/></svg>Não deixe roupa molhada sobre as camas.</li>
+      <li><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="15" cy="12" r="1"/></svg>Portas dos quartos fechadas por causa dos insetos.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/></svg>Lixo só nas lixeiras. Nunca no rio nem na grama.</li>
+      <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8"/></svg>Não mexa nos móveis nem nas configurações das TVs.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>Cuidado no rio e na escada. Zona rural: atenção a animais peçonhentos.</li>
+      <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Na saída, deixe tudo organizado como encontrou.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="logos">
+    <img src="img/chamaviva.png" alt="Chama Viva">
+    <img class="ig" src="img/igreja.png" alt="1ª Igreja Evangélica Assembleia de Deus em Barreiras-BA">
+  </div>
+  <div class="f1">Retiro de Jovens</div>
+  <div class="f2">07 e 08 de novembro de 2026 · Chácara Chalana · Barreiras-BA</div>
+</footer>
+
+
+<div class="gk" id="gk" aria-hidden="true">
+  <button class="close" id="gk-close" aria-label="Fechar">✕</button>
+  <div class="fx" id="gk-fx"></div><div class="glow"></div>
+  <div class="in">
+    <div class="flame"><span class="f1"></span><span class="f2"></span><span class="f3"></span></div>
+    <div class="kick">Domingo · 14h</div>
+    <h2>Gincana</h2>
+    <div class="breve">EM BREVE</div>
+    <p>As provas estão sendo preparadas em segredo. <strong>Prepare o fôlego, a estratégia e o time.</strong> As regras aparecem aqui quando chegar a hora.</p>
+    <div class="times"><div class="time azul"><small>Time</small>Azul</div><div class="time verde"><small>Time</small>Verde</div></div>
+    <div class="dica">Leve roupa das duas cores. Você só descobre o seu time na chácara.</div>
+    <div class="count" id="cd-gk"></div>
+    <button class="voltar" id="gk-back">Voltar</button>
+  </div>
+</div>
+<script>
+(function(){
+  var TZ='-03:00';
+  function at(iso){return new Date(iso+':00'+TZ).getTime();}
+  var SAIDA=at('2026-11-07T07:30'), GINC=at('2026-11-08T14:00');
+  function cd(el,target,doneTxt){
+    if(!el)return;
+    function tick(){
+      var d=target-Date.now();
+      if(d<=0){el.className='count done';el.innerHTML='<div><b>'+doneTxt+'</b></div>';return;}
+      var s=Math.floor(d/1000),dd=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),ss=s%60;
+      var p=function(n){return (n<10?'0':'')+n;};
+      el.innerHTML='<div><b>'+dd+'</b><span>dias</span></div><div><b>'+p(h)+'</b><span>horas</span></div><div><b>'+p(m)+'</b><span>min</span></div><div><b>'+p(ss)+'</b><span>seg</span></div>';
+    }
+    tick();setInterval(tick,1000);
+  }
+  cd(document.getElementById('cd-hero'),SAIDA,'É HOJE. BORA!');
+  cd(document.getElementById('cd-gk'),GINC,'COMEÇOU!');
+
+  /* reveal */
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:0,rootMargin:'0px 0px -5% 0px'});
+    rv.forEach(function(e){io.observe(e);});
+    setTimeout(function(){rv.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight)e.classList.add('on');});},800);
+    setTimeout(function(){rv.forEach(function(e){e.classList.add('on');});},4000);
+  }else{rv.forEach(function(e){e.classList.add('on');});}
+
+  /* tabs */
+  var tabs=document.querySelectorAll('.tabs button');
+  function showDia(d){tabs.forEach(function(b){b.classList.toggle('on',b.dataset.dia===d);});
+    document.getElementById('dia-sab').classList.toggle('on',d==='sab');document.getElementById('dia-dom').classList.toggle('on',d==='dom');}
+  tabs.forEach(function(b){b.addEventListener('click',function(){showDia(b.dataset.dia);});});
+  /* now highlight */
+  function now(){
+    var n=Date.now(),cur=null;
+    document.querySelectorAll('.ev[data-t]').forEach(function(ev){
+      var t=ev.dataset.t.split('|'),on=n>=at(t[0])&&n<at(t[1]);ev.classList.toggle('now',on);if(on)cur=ev;});
+    if(cur&&!now.did){now.did=1;showDia(cur.closest('#dia-dom')?'dom':'sab');}
+  }
+  now();setInterval(now,60000);
+  if(!document.querySelector('.ev.now')&&Date.now()>=at('2026-11-08T00:00'))showDia('dom');
+
+  /* checklist */
+  var KEY='cv-retiro-lista',items=document.querySelectorAll('.lista li'),st=document.getElementById('lista-st');
+  var saved=[];try{saved=JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){}
+  function upd(){var n=document.querySelectorAll('.lista li.ok').length;
+    st.textContent=n===0?'Toque pra marcar o que já separou':n===items.length?'Tudo separado. Mala pronta!':n+' de '+items.length+' separados';}
+  items.forEach(function(li,i){if(saved.indexOf(i)>-1)li.classList.add('ok');
+    li.addEventListener('click',function(){li.classList.toggle('ok');
+      var arr=[];items.forEach(function(l,j){if(l.classList.contains('ok'))arr.push(j);});
+      try{localStorage.setItem(KEY,JSON.stringify(arr));}catch(e){}upd();});});
+  document.getElementById('lista-reset').addEventListener('click',function(){items.forEach(function(l){l.classList.remove('ok');});try{localStorage.removeItem(KEY);}catch(e){}upd();});
+  upd();
+
+  /* gincana overlay */
+  var gk=document.getElementById('gk'),fx=document.getElementById('gk-fx');
+  for(var i=0;i<28;i++){var p=document.createElement('i');p.style.left=Math.random()*100+'%';p.style.animationDuration=(4+Math.random()*5)+'s';p.style.animationDelay=(Math.random()*6)+'s';p.style.width=p.style.height=(3+Math.random()*5)+'px';fx.appendChild(p);}
+  function open(){gk.classList.add('open');document.body.classList.add('lock');requestAnimationFrame(function(){gk.classList.add('show');});gk.scrollTop=0;}
+  function close(){gk.classList.remove('show');document.body.classList.remove('lock');setTimeout(function(){gk.classList.remove('open');},350);}
+  document.querySelectorAll('[data-gk]').forEach(function(e){e.addEventListener('click',open);});
+  document.getElementById('gk-close').addEventListener('click',close);
+  document.getElementById('gk-back').addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
