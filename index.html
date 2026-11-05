@@ -219,6 +219,12 @@
   .fotos .a{grid-column:span 4;grid-row:span 2}
   .fotos .b,.fotos .c{grid-column:span 2}
   .fotos .d,.fotos .e{grid-column:span 3}
+  .rota{margin-top:16px;background:#FFF7E9;border:1px solid #F3E3C6;border-radius:14px;padding:14px}
+  .rota b{display:block;font-size:.98rem}
+  .rota span{display:block;color:var(--ink-2);font-size:.85rem;margin:2px 0 10px}
+  .rota-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .rota-btns a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;padding:12px;border-radius:12px}
+  .rota-btns a svg{width:18px;height:18px;stroke:var(--fogo-1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:var(--ink);color:#fff;font-weight:700;text-decoration:none;padding:15px 18px;border-radius:14px;font-size:.95rem;transition:background .2s}
   .btn:hover{background:var(--fogo-3)}
   .btn svg{width:20px;height:20px;stroke:var(--fogo-1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -418,6 +424,14 @@
         <img class="c" src="img/volei.jpg" alt="Quadra de vôlei">
         <img class="d" src="img/quiosque.jpg" alt="Quiosque com mesas">
         <img class="e" src="img/area.jpg" alt="Área da chácara">
+      </div>
+      <div class="rota">
+        <b>Vai depois ou por conta própria?</b>
+        <span>Toque e a rota abre direto no app. Os últimos 3 km são de estrada de chão.</span>
+        <div class="rota-btns">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-12.185506,-45.184556&travelmode=driving" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Google Maps</a>
+          <a href="https://waze.com/ul?ll=-12.185506,-45.184556&navigate=yes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8z"/></svg>Waze</a>
+        </div>
       </div>
       <a class="btn" href="https://photos.google.com/share/AF1QipNsogtmNT1AY_g5vCd8eZBW8p3ogmfWUbfDsD4dzjkIu_5mSDU3unwT1pJuGwAPCg?key=ZWF0UHg5WTB4Z1hwbU53cVpzT0xBN291WDBnZUNn" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
