@@ -124,6 +124,25 @@
   .gk .times{max-width:360px;width:100%;margin-top:26px}
   .gk .dica{margin-top:14px;font-size:.85rem;color:#A79D92;max-width:36ch}
   .gk .voltar{margin-top:32px;background:var(--fogo-3);color:#fff;border:0;border-radius:12px;padding:14px 26px;font:800 .95rem 'Inter';cursor:pointer}
+  .gk-rules{justify-content:flex-start;padding-top:70px;text-align:left !important;align-items:stretch;max-width:640px;margin:0 auto}
+  .gk-rules .flame,.gk-rules .kick,.gk-rules h2{align-self:center;text-align:center}
+  .gk-rules .times{max-width:100%;margin:18px 0 22px}
+  .gk-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 18px 14px;margin-bottom:14px}
+  .gk-box h3{text-align:left;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:1.5rem;letter-spacing:.08em;color:var(--fogo-1);margin-bottom:8px}
+  .gk-box ul{list-style:none}
+  .gk-box li{text-align:left;padding:6px 0 6px 18px;position:relative;color:#D9CFC2;font-size:.95rem}
+  .gk-box li::before{content:"";position:absolute;left:0;top:13px;width:7px;height:7px;border-radius:50%;background:var(--fogo-2)}
+  .gk-box li b{color:#fff}
+  .prova{display:grid;grid-template-columns:44px 1fr;gap:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;margin-bottom:10px}
+  .prova .pn{font-family:'Bebas Neue',Impact,sans-serif;font-size:2rem;line-height:1;color:var(--fogo-2)}
+  .prova h4{text-align:left;font-size:1.05rem;font-weight:800;margin-bottom:6px;color:#fff}
+  .prova p{text-align:left;font-size:.92rem;color:#D9CFC2;max-width:none;margin-bottom:10px}
+  .prova p b{color:#fff}
+  .prova .pts{display:inline-block;font:800 .66rem 'Inter';letter-spacing:.14em;text-transform:uppercase;color:#17120F;background:var(--fogo-1);padding:5px 10px;border-radius:999px}
+  .dica-box{text-align:center;color:#D9CFC2;font-size:.92rem;margin-top:6px}
+  .dica-box b{color:#fff;display:block;margin-bottom:2px}
+  .gk-rules .count{align-self:center}
+  .gk-rules .voltar{align-self:center}
   body.lock{overflow:hidden}
 
   /* ===== CONVITE ===== */
@@ -310,7 +329,7 @@
       <div class="chip"><svg viewBox="0 0 24 24"><path d="M12 3c1 3-2 4-2 7a4 4 0 0 0 8 0c0-2-1-3-1-3s0 2-2 2c0-2-1-4-3-6z"/><path d="M7 13c-2 2-2 6 1 8h8c3-2 3-6 1-8"/></svg><b>Círculo de Oração</b><span>Sábado à noite</span></div>
       <div class="chip"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><b>EBD</b><span>Estudo da Palavra</span></div>
       <div class="chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><b>Manhã com Deus</b><span>Domingo cedo</span></div>
-      <div class="chip gk-chip" data-gk role="button" tabindex="0"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><b>Gincana</b><span>Domingo à tarde · Azul × Verde</span><em class="tap"><svg viewBox="0 0 24 24"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v6"/><path d="M12 10a1.5 1.5 0 0 1 3 0v2"/><path d="M15 11a1.5 1.5 0 0 1 3 0v2"/><path d="M18 12.5a1.5 1.5 0 0 1 3 0V17a5 5 0 0 1-5 5h-3.5a5 5 0 0 1-4.2-2.3L5.5 15a1.6 1.6 0 0 1 2.6-1.8L9 14.5"/></svg>Toque pra ver</em></div>
+      <div class="chip gk-chip" data-gk role="button" tabindex="0"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><b>Gincana</b><span>Domingo à tarde · Azul × Verde</span><em class="tap"><svg viewBox="0 0 24 24"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v6"/><path d="M12 10a1.5 1.5 0 0 1 3 0v2"/><path d="M15 11a1.5 1.5 0 0 1 3 0v2"/><path d="M18 12.5a1.5 1.5 0 0 1 3 0V17a5 5 0 0 1-5 5h-3.5a5 5 0 0 1-4.2-2.3L5.5 15a1.6 1.6 0 0 1 2.6-1.8L9 14.5"/></svg>Ver as regras</em></div>
       <div class="chip"><svg viewBox="0 0 24 24"><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M12 3v5"/></svg><b>Rio e piscina</b><span>Horários livres</span></div>
       <div class="chip"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4 4 0 0 1 7-2.5"/></svg><b>Comunhão</b><span>Refeições juntos</span></div>
     </div>
@@ -380,7 +399,7 @@
         <div class="ev hi" data-t="2026-11-08T09:00|2026-11-08T11:30"><div class="hr">09:00<small>às 11:30</small></div><div class="tx">Manhã com Deus</div></div>
         <div class="ev livre" data-t="2026-11-08T11:30|2026-11-08T12:30"><div class="hr">11:30<small>às 12:30</small></div><div class="tx">Horário livre</div></div>
         <div class="ev" data-t="2026-11-08T12:30|2026-11-08T14:00"><div class="hr">12:30<small>às 14:00</small></div><div class="tx">Almoço</div></div>
-        <div class="ev hi link" data-t="2026-11-08T14:00|2026-11-08T16:00"><div class="hr">14:00<small>às 16:00</small></div><div class="tx" data-gk>Gincana <em class="tap-sm">toque pra ver</em></div></div>
+        <div class="ev hi link" data-t="2026-11-08T14:00|2026-11-08T16:00"><div class="hr">14:00<small>às 16:00</small></div><div class="tx" data-gk>Gincana <em class="tap-sm">ver regras</em></div></div>
         <div class="ev" data-t="2026-11-08T17:00|2026-11-08T18:00"><div class="hr">17:00</div><div class="tx">Saída de volta pra Barreiras</div></div>
       </div>
     </div>
@@ -512,14 +531,71 @@
 <div class="gk" id="gk" aria-hidden="true">
   <button class="close" id="gk-close" aria-label="Fechar">✕</button>
   <div class="fx" id="gk-fx"></div><div class="glow"></div>
-  <div class="in">
+  <div class="in gk-rules">
     <div class="flame"><span class="f1"></span><span class="f2"></span><span class="f3"></span></div>
-    <div class="kick">Domingo · 14h</div>
+    <div class="kick">Domingo · 14h às 16h</div>
     <h2>Gincana</h2>
-    <div class="breve">EM BREVE</div>
-    <p>As provas estão sendo preparadas em segredo. <strong>Prepare o fôlego, a estratégia e o time.</strong> As regras aparecem aqui quando chegar a hora.</p>
     <div class="times"><div class="time azul"><small>Time</small>Azul</div><div class="time verde"><small>Time</small>Verde</div></div>
-    <div class="dica">Leve roupa das duas cores. Você só descobre o seu time na chácara.</div>
+
+    <div class="gk-box">
+      <h3>Como funciona</h3>
+      <ul>
+        <li>5 provas · <b>100 pontos cada</b> · 500 no total</li>
+        <li>Nas provas de disputa direta, quem vence leva <b>100</b> e quem perde leva <b>50</b></li>
+        <li>Empate no final: pergunta relâmpago decide</li>
+        <li>A palavra do juiz é final</li>
+      </ul>
+    </div>
+
+    <div class="prova">
+      <div class="pn">01</div>
+      <div>
+        <h4>Caça ao versículo</h4>
+        <p>O narrador fala a referência. Um representante de cada time, Bíblia fechada no colo. Quem achar e ler em voz alta primeiro pontua.</p>
+        <span class="pts">10 rodadas · 10 pontos cada</span>
+      </div>
+    </div>
+
+    <div class="prova">
+      <div class="pn">02</div>
+      <div>
+        <h4>Mímica bíblica — Quem sou eu?</h4>
+        <p>Um jogador sorteia um personagem ou parábola e encena, sem falar nem escrever. O próprio time tem 1 minuto pra acertar. Os times alternam a cada rodada.</p>
+        <span class="pts">10 rodadas · 20 pontos por acerto</span>
+      </div>
+    </div>
+
+    <div class="prova">
+      <div class="pn">03</div>
+      <div>
+        <h4>Copos com balão</h4>
+        <p>Revezamento com 4 por time. Cada um enche o balão e derruba os copos da mesa só com o ar que sai dele. O próximo só começa quando o anterior derrubar todos.</p>
+        <span class="pts">Menor tempo total vence · 100 × 50</span>
+      </div>
+    </div>
+
+    <div class="prova">
+      <div class="pn">04</div>
+      <div>
+        <h4>Copo na testa</h4>
+        <p>Revezamento com 4 por time. Levar o copo equilibrado na testa até o ponto de virada e voltar. Derrubou, volta pro início.</p>
+        <span class="pts">Menor tempo total vence · 100 × 50</span>
+      </div>
+    </div>
+
+    <div class="prova">
+      <div class="pn">05</div>
+      <div>
+        <h4>Quiz do balão d'água</h4>
+        <p>4 jogadores em fila, intercalados: azul, verde, azul, verde. O narrador faz a pergunta e o balão d'água começa a passar de mão em mão. Quando o narrador disser <b>"responde!"</b>, quem estiver com o balão responde na hora. Acertou, vem a próxima pergunta. Errou ou travou: estoura o balão na própria cabeça e o time perde a rodada. Estourou sozinho na mão? Perde o time de quem segurava.</p>
+        <span class="pts">4 rodadas · 25 pontos cada</span>
+      </div>
+    </div>
+
+    <div class="gk-box dica-box">
+      <b>Leve roupa azul e roupa verde.</b> Você só descobre o seu time na chácara.
+    </div>
+
     <div class="count" id="cd-gk"></div>
     <button class="voltar" id="gk-back">Voltar</button>
   </div>
